@@ -1,0 +1,58 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package mp3;
+
+// import MusicTest.NameOfList; 
+
+import java.io.File;
+import java.io.IOException;
+
+
+/**
+ *
+ * @author Sandro
+ */
+public class PlayList {
+
+    public void createFile(NameOfList nameOfList) throws IOException {
+        
+        File f;
+        
+        // nameForThePlayList();
+        
+        f = new File(nameForThePlayList());
+  
+        if(!f.exists()){
+        f.createNewFile();
+        System.out.println("The Play List has been created");
+        }
+        
+        
+        
+    }
+
+    public boolean nameForThePlayList() {
+        
+        // String File = "myList.txt";
+        // return File;
+
+        File f;
+        
+        // nameForThePlayList();
+        
+        f = new File("myFile.txt");
+  
+        if(!f.exists()){
+        f.createNewFile();
+        System.out.println("The Play List has been created");
+        return true;
+        }
+        
+        
+    }
+
+    
+    
+}
